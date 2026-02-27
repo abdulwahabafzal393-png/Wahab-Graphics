@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Work | Wahab Graphics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-black">
+    <header class="main-header glass">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="index.html"><img src="logo.jpg" alt="Wahab Graphics Logo"
+                        style="height: 35px; vertical-align: middle; margin-right: 8px;"><span
+                        class="gold-text">WAHAB</span> GRAPHICS</a>
+            </div>
+            <div class="nav-actions">
+                <a href="javascript:history.back()" class="btn btn-outline">← Back</a>
+                <a href="index.html" class="btn btn-outline">Home</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-container">
+        <section class="gallery-page-section">
+            <div class="section-header">
+                <h2 id="gallery-title">Our Work</h2>
+                <p id="gallery-desc">Experience the quality of our creative designs</p>
+            </div>
+
+            <div class="modal-gallery" id="work-gallery">
+                <!-- Portfolios from projects.json will load here via script.js -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox for Full View -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <div class="lightbox-wrapper glass">
+            <img class="lightbox-content" id="lightbox-img">
+            <div class="lightbox-social">
+                <div class="social-top">
+                    <button class="like-btn" id="like-btn">
+                        <span class="heart-icon"><i class="fas fa-heart"></i></span> <span id="like-count">0</span>
+                        Likes
+                    </button>
+                </div>
+                <div class="comments-section">
+                    <h4>Comments</h4>
+                    <div class="comments-list" id="comments-list">
+                        <!-- Comments will appear here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-social-links">
+                <a href="https://www.facebook.com/profile.php?id=100084014186190" target="_blank"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/wahabafzalgraphics?igsh=d20zcmhmYTVsbmFw" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@wahabafzal63?_r=1&_t=ZS-94DzYqf2ug9" target="_blank"><i
+                        class="fab fa-tiktok"></i></a>
+                <a href="https://youtube.com/@wahabafzal08?si=ohB-vm4yHDxkQMmN" target="_blank"><i
+                        class="fab fa-youtube"></i></a>
+                <a href="mailto:abdulwahabafzal393@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><i class="fas fa-location-dot" style="color: var(--primary); margin-right: 10px;"></i> Chakwal. All
+                rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="projectsData.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Update title based on category
+        const params = new URLSearchParams(window.location.search);
+        const cat = params.get('category');
+        const titleEl = document.getElementById('gallery-title');
+        const descEl = document.getElementById('gallery-desc');
+
+        if (cat === 'printing') {
+            titleEl.textContent = 'Printing Portfolio';
+            descEl.textContent = 'High-quality digital and offset printing works';
+        } else if (cat === 'social') {
+            titleEl.textContent = 'Social Media Designs';
+            descEl.textContent = 'Engaging graphics for digital growth';
+        } else if (cat === 'logos') {
+            titleEl.textContent = 'Logo Design Portfolio';
+            descEl.textContent = 'Unique brand identities crafted with precision';
+        } else if (cat === 'bill-books') {
+            titleEl.textContent = 'Bill Books';
+            descEl.textContent = 'Professional billing and invoice designs';
+        } else if (cat === 'wedding-cards') {
+            titleEl.textContent = 'Wedding Cards';
+            descEl.textContent = 'Elegant and custom shadi card designs';
+        } else if (cat === 'business-cards') {
+            titleEl.textContent = 'Business Cards';
+            descEl.textContent = 'Premium visiting card designs for your brand';
+        } else if (cat === 'panaflex') {
+            titleEl.textContent = 'Panaflex Printing';
+            descEl.textContent = 'Large scale banner and panaflex designs';
+        } else if (cat === 'brochures') {
+            titleEl.textContent = 'Brochures';
+            descEl.textContent = 'Creative pamphlet and brochure designs';
+        } else if (cat === 'stickers') {
+            titleEl.textContent = 'Stickers';
+            descEl.textContent = 'Custom product and marketing stickers';
+        } else if (cat === 'facebook-designs') {
+            titleEl.textContent = 'Facebook Post Designs';
+            descEl.textContent = 'Engaging content for your business page';
+        } else if (cat === 'instagram-branding') {
+            titleEl.textContent = 'Instagram Branding';
+            descEl.textContent = 'Aesthetic and creative posts for your feed';
+        } else if (cat === 'youtube-graphics') {
+            titleEl.textContent = 'YouTube Graphics';
+            descEl.textContent = 'Custom thumbnails and channel art';
+        } else if (cat === 'tiktok-branding') {
+            titleEl.textContent = 'TikTok Branding';
+            descEl.textContent = 'Vertical graphics optimized for viral reach';
+        } else if (cat === 'business-ads') {
+            titleEl.textContent = 'Business Ads';
+            descEl.textContent = 'Professional advertising designs for your brand';
+        } else if (cat === 'sports-poster') {
+            titleEl.textContent = 'Sports Posters';
+            descEl.textContent = 'High-energy visuals for athletic events';
+        } else if (cat === 'mehfil-poster') {
+            titleEl.textContent = 'Mehfil Posters';
+            descEl.textContent = 'Traditional and elegant designs for gatherings';
+        } else if (cat === 'islamic-poster') {
+            titleEl.textContent = 'Islamic Posters';
+            descEl.textContent = 'Beautiful spiritual and educational designs';
+        } else if (cat === 'academy-poster') {
+            titleEl.textContent = 'Academy Posters';
+            descEl.textContent = 'Academic and promotional educational graphics';
+        } else if (cat === 'school-poster') {
+            titleEl.textContent = 'School Posters';
+            descEl.textContent = 'Creative and fun designs for school events';
+        }
+    </script>
+</body>
+
+</html>

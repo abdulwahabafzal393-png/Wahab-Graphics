@@ -1,0 +1,330 @@
+const projectsData = {
+    "printing": [
+        {
+            "id": 1,
+            "category": "bill-books",
+            "title": "Bill Book 1",
+            "src": "printing-work/Bill Books/1.jpg"
+        },
+        {
+            "id": 2,
+            "category": "bill-books",
+            "title": "Bill Book 2",
+            "src": "printing-work/Bill Books/2.jpg"
+        },
+        {
+            "id": 3,
+            "category": "bill-books",
+            "title": "Bill Book 3",
+            "src": "printing-work/Bill Books/3.jpg"
+        },
+        {
+            "id": 4,
+            "category": "brochures",
+            "title": "Brochure 1",
+            "src": "printing-work/Brouchers/1.jpg"
+        },
+        {
+            "id": 5,
+            "category": "brochures",
+            "title": "Brochure 2",
+            "src": "printing-work/Brouchers/2.jpg"
+        },
+        {
+            "id": 6,
+            "category": "business-cards",
+            "title": "Business Card 1",
+            "src": "printing-work/Business Cards/2.jpg"
+        },
+        {
+            "id": 7,
+            "category": "business-cards",
+            "title": "Business Card 2",
+            "src": "printing-work/Business Cards/3.jpg"
+        },
+        {
+            "id": 8,
+            "category": "business-cards",
+            "title": "Business Card 3",
+            "src": "printing-work/Business Cards/4.jpg"
+        },
+        {
+            "id": 9,
+            "category": "business-cards",
+            "title": "Business Card 4",
+            "src": "printing-work/Business Cards/5.jpg"
+        },
+        {
+            "id": 10,
+            "category": "business-cards",
+            "title": "Business Card 5",
+            "src": "printing-work/Business Cards/Business Cards.jpg"
+        },
+        {
+            "id": 11,
+            "category": "panaflex",
+            "title": "Panaflex 1",
+            "src": "printing-work/PANAFLEX PRINTING/1.jpg"
+        },
+        {
+            "id": 12,
+            "category": "panaflex",
+            "title": "Panaflex 2",
+            "src": "printing-work/PANAFLEX PRINTING/2.jpg"
+        },
+        {
+            "id": 13,
+            "category": "panaflex",
+            "title": "Panaflex 3",
+            "src": "printing-work/PANAFLEX PRINTING/3.jpg"
+        },
+        {
+            "id": 14,
+            "category": "panaflex",
+            "title": "Panaflex 4",
+            "src": "printing-work/PANAFLEX PRINTING/4.jpg"
+        },
+        {
+            "id": 15,
+            "category": "panaflex",
+            "title": "Panaflex 5",
+            "src": "printing-work/PANAFLEX PRINTING/5.jpg"
+        },
+        {
+            "id": 16,
+            "category": "panaflex",
+            "title": "Panaflex 6",
+            "src": "printing-work/PANAFLEX PRINTING/6.jpg"
+        },
+        {
+            "id": 17,
+            "category": "wedding-cards",
+            "title": "Wedding Card 1",
+            "src": "printing-work/SHADI CARDS/WhatsApp Image 2026-02-25 at 10.51.15 PM.jpeg"
+        },
+        {
+            "id": 18,
+            "category": "wedding-cards",
+            "title": "Wedding Card 2",
+            "src": "printing-work/SHADI CARDS/WhatsApp Image 2026-02-25 at 10.51.37 PM.jpeg"
+        },
+        {
+            "id": 19,
+            "category": "wedding-cards",
+            "title": "Wedding Card 3",
+            "src": "printing-work/SHADI CARDS/WhatsApp Image 2026-02-25 at 10.51.58 PM.jpeg"
+        },
+        {
+            "id": 20,
+            "category": "wedding-cards",
+            "title": "Wedding Card 4",
+            "src": "printing-work/SHADI CARDS/WhatsApp Image 2026-02-25 at 10.52.27 PM.jpeg"
+        },
+        {
+            "id": 21,
+            "category": "wedding-cards",
+            "title": "Wedding Card 5",
+            "src": "printing-work/SHADI CARDS/WhatsApp Image 2026-02-25 at 10.52.56 PM.jpeg"
+        },
+        {
+            "id": 22,
+            "category": "wedding-cards",
+            "title": "Wedding Card 6",
+            "src": "printing-work/SHADI CARDS/WhatsApp Image 2026-02-25 at 10.54.07 PM.jpeg"
+        },
+        {
+            "id": 23,
+            "category": "wedding-cards",
+            "title": "Wedding Card 7",
+            "src": "printing-work/SHADI CARDS/WhatsApp Image 2026-02-25 at 10.54.29 PM.jpeg"
+        },
+        {
+            "id": 24,
+            "category": "wedding-cards",
+            "title": "Wedding Card 8",
+            "src": "printing-work/SHADI CARDS/WhatsApp Image 2026-02-25 at 10.54.55 PM.jpeg"
+        },
+        {
+            "id": 25,
+            "category": "stickers",
+            "title": "Sticker 1",
+            "src": "printing-work/Stickers/1.jpg"
+        },
+        {
+            "id": 26,
+            "category": "stickers",
+            "title": "Sticker 2",
+            "src": "printing-work/Stickers/2.jpg"
+        },
+        {
+            "id": 27,
+            "category": "stickers",
+            "title": "Sticker 3",
+            "src": "printing-work/Stickers/3.jpg"
+        },
+        {
+            "id": 28,
+            "category": "stickers",
+            "title": "Sticker 4",
+            "src": "printing-work/Stickers/4.jpg"
+        },
+        {
+            "id": 29,
+            "category": "stickers",
+            "title": "Sticker 5",
+            "src": "printing-work/Stickers/5.jpg"
+        },
+        {
+            "id": 30,
+            "category": "stickers",
+            "title": "Sticker 6",
+            "src": "printing-work/Stickers/6.jpg"
+        },
+        {
+            "id": 31,
+            "category": "stickers",
+            "title": "Sticker 7",
+            "src": "printing-work/Stickers/7.jpg"
+        },
+        {
+            "id": 32,
+            "category": "stickers",
+            "title": "Sticker 8",
+            "src": "printing-work/Stickers/8.jpg"
+        },
+        {
+            "id": 33,
+            "category": "stickers",
+            "title": "Sticker 9",
+            "src": "printing-work/Stickers/9.jpg"
+        },
+        {
+            "id": 34,
+            "category": "stickers",
+            "title": "Sticker 10",
+            "src": "printing-work/Stickers/10.jpg"
+        },
+        {
+            "id": 35,
+            "category": "stickers",
+            "title": "Sticker 11",
+            "src": "printing-work/Stickers/11.jpg"
+        },
+        {
+            "id": 36,
+            "category": "stickers",
+            "title": "Sticker 12",
+            "src": "printing-work/Stickers/12.jpg"
+        }
+    ],
+    "social": [
+        {
+            "id": 101,
+            "category": "facebook-designs",
+            "title": "Facebook Business Post",
+            "src": "social media posts/1.jpg"
+        },
+        {
+            "id": 106,
+            "category": "facebook-designs",
+            "title": "Official Page Poster",
+            "src": "social media posts/MAIN POSTER.jpg"
+        },
+        {
+            "id": 102,
+            "category": "instagram-branding",
+            "title": "Modern Instagram Post",
+            "src": "social media posts/2.jpg"
+        },
+        {
+            "id": 105,
+            "category": "instagram-branding",
+            "title": "Ramadan Special Post",
+            "src": "social media posts/ramadan 2026.jpg"
+        },
+        {
+            "id": 108,
+            "category": "instagram-branding",
+            "title": "Square 6x6 Design",
+            "src": "social media posts/6X6.jpg"
+        },
+        {
+            "id": 103,
+            "category": "youtube-graphics",
+            "title": "Channel Thumbnail",
+            "src": "social media posts/3.jpg"
+        },
+        {
+            "id": 104,
+            "category": "tiktok-branding",
+            "title": "Vertical Viral Graphic",
+            "src": "social media posts/12.jpg"
+        },
+        {
+            "id": 107,
+            "category": "business-ads",
+            "title": "Professional Business Ad",
+            "src": "social media posts/damin mahar.jpg"
+        }
+    ],
+    "wallpaper": [
+        {
+            "id": 201,
+            "category": "shine",
+            "title": "Glossy Wall Art",
+            "src": "icons/logo_design.png"
+        },
+        {
+            "id": 202,
+            "category": "matte",
+            "title": "Matte Finish Decor",
+            "src": "icons/logo_design.png"
+        }
+    ],
+    "designing": [
+        {
+            "id": 401,
+            "category": "sports-poster",
+            "title": "Cricket Event Poster",
+            "src": "social media posts/MAIN POSTER.jpg"
+        }
+    ],
+    "logos": [
+        {
+            "id": 301,
+            "category": "logos",
+            "title": "Abstract Brand Logo",
+            "src": "logos/1.jpg"
+        },
+        {
+            "id": 302,
+            "category": "logos",
+            "title": "Minimalist Identity",
+            "src": "logos/2.jpg"
+        },
+        {
+            "id": 303,
+            "category": "logos",
+            "title": "Corporate Logo v1",
+            "src": "logos/WhatsApp Image 2026-02-26 at 12.37.30 AM.jpeg"
+        },
+        {
+            "id": 304,
+            "category": "logos",
+            "title": "Corporate Logo v2",
+            "src": "logos/WhatsApp Image 2026-02-26 at 12.40.00 AM.jpeg"
+        },
+        {
+            "id": 305,
+            "category": "logos",
+            "title": "Corporate Logo v3",
+            "src": "logos/WhatsApp Image 2026-02-26 at 12.40.01 AM.jpeg"
+        },
+        {
+            "id": 306,
+            "category": "logos",
+            "title": "Creative Symbol Design",
+            "src": "logos/WhatsApp Image 2026-02-26 at 12.40.25 AM.jpeg"
+        }
+    ]
+}

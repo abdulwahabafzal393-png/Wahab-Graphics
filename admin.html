@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Wahab Graphics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .admin-panel {
+            max-width: 900px;
+            margin: 140px auto 60px;
+            padding: 40px;
+        }
+
+        .upload-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--glass-border);
+            border-radius: 8px;
+            color: #fff;
+            outline: none;
+        }
+
+        .preview-box {
+            width: 100%;
+            height: 250px;
+            border: 2px dashed var(--glass-border);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .preview-box img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .sync-section {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid var(--glass-border);
+        }
+
+        .fb-sync-card {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            background: rgba(24, 119, 242, 0.1);
+            border: 1px solid rgba(24, 119, 242, 0.3);
+            border-radius: 12px;
+        }
+
+        .fb-icon {
+            font-size: 2.5rem;
+            color: #1877f2;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            background: var(--accent);
+            color: #000;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body class="bg-black">
+    <header class="main-header glass">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="index.html"><img src="logo.jpg" alt="Wahab Graphics Logo" style="height: 35px;"><span
+                        class="gold-text">WAHAB</span> ADMIN</a>
+            </div>
+            <a href="index.html" class="btn btn-outline">Exit Admin</a>
+        </nav>
+    </header>
+
+    <main class="admin-panel glass">
+        <div class="section-header">
+            <h2>Project Management</h2>
+            <p>Upload new designs and they will automatically appear in their sections.</p>
+        </div>
+
+        <form id="upload-form" class="upload-form">
+            <div class="form-left">
+                <div class="form-group">
+                    <label>Project Title</label>
+                    <input type="text" id="proj-title" placeholder="e.g. Modern Wedding Card" required>
+                </div>
+                <div class="form-group">
+                    <label>Category</label>
+                    <select id="proj-category" required>
+                        <option value="wedding-cards">Wedding Cards</option>
+                        <option value="panaflex">Panaflex Printing</option>
+                        <option value="facebook">Social Media (FB)</option>
+                        <option value="instagram">Social Media (IG)</option>
+                        <option value="shine">Wallpaper (Shine)</option>
+                        <option value="matte">Wallpaper (Matte)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Select Image</label>
+                    <input type="file" id="proj-file" accept="image/*" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Upload Project</button>
+            </div>
+            <div class="form-right">
+                <label style="display: block; margin-bottom: 10px; color: var(--primary);">Preview</label>
+                <div class="preview-box" id="preview-box">
+                    <span style="color: var(--text-muted);">No image selected</span>
+                </div>
+            </div>
+        </form>
+
+        <section class="sync-section">
+            <div class="section-header" style="text-align: left; margin-bottom: 30px;">
+                <h3>Facebook Auto-Sync</h3>
+                <p>Sync your latest Facebook Page posts directly to your Social Media gallery.</p>
+            </div>
+            <div class="fb-sync-card">
+                <div class="fb-icon"><i class="fab fa-facebook"></i></div>
+                <div class="fb-info">
+                    <h4>Wahab Graphics Page <span class="status-badge">Connected</span></h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Last sync: 2 hours ago</p>
+                </div>
+                <button class="btn btn-outline" style="margin-left: auto;"
+                    onclick="alert('Syncing from Facebook API...')"><i class="fas fa-sync"></i> Sync Now</button>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const fileInput = document.getElementById('proj-file');
+        const previewBox = document.getElementById('preview-box');
+
+        fileInput.addEventListener('change', function () {
+            const file = this.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    previewBox.innerHTML = `<img src="${e.target.result}">`;
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+
+        document.getElementById('upload-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Simulation: This project metadata has been prepared for the Agent. Please notify Antigravity to "Apply the last project upload" to save it permanently!');
+        });
+    </script>
+</body>
+
+</html>
