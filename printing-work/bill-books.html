@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Books | Wahab Graphics</title>
+    <link rel="stylesheet" href="../styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-black">
+    <header class="main-header glass">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="../index.html"><img src="../logo.jpg" alt="Wahab Graphics Logo"
+                        style="height: 35px; vertical-align: middle; margin-right: 8px;"><span
+                        class="gold-text">WAHAB</span> GRAPHICS</a>
+            </div>
+            <a href="../index.html" class="btn btn-outline">? Back to Home</a>
+        </nav>
+    </header>
+
+    <main class="page-container">
+        <section class="gallery-page-section">
+            <div class="section-header">
+                <h2>Bill Books & Stationery</h2>
+                <p>Professional bill books and office stationery.</p>
+            </div>
+
+            <div class="modal-gallery">
+                <img src="Bill Books/1.jpg" alt="Bill Book 1" class="gallery-img">
+                <img src="Bill Books/2.jpg" alt="Bill Book 2" class="gallery-img">
+                <img src="Bill Books/3.jpg" alt="Bill Book 3" class="gallery-img">
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <div class="lightbox-wrapper glass">
+            <img class="lightbox-content" id="lightbox-img">
+            <div class="lightbox-social">
+                <div class="social-top">
+                    <button class="like-btn" id="like-btn">
+                        <span class="heart-icon"><i class="fas fa-heart"></i></span> <span id="like-count">0</span>
+                        Likes
+                    </button>
+                </div>
+                <div class="comments-section">
+                    <h4>Comments</h4>
+                    <div class="comments-list" id="comments-list"></div>
+                    <div class="comment-input-area">
+                        <input type="text" id="comment-input" placeholder="Add a comment...">
+                        <button id="post-comment-btn" class="btn btn-primary">Post</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-social-links">
+                <a href="https://www.facebook.com/profile.php?id=100084014186190" target="_blank"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/wahabafzalgraphics?igsh=d20zcmhmYTVsbmFw" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@wahabafzal63?_r=1&_t=ZS-94DzYqf2ug9" target="_blank"><i
+                        class="fab fa-tiktok"></i></a>
+                <a href="https://youtube.com/@wahabafzal08?si=ohB-vm4yHDxkQMmN" target="_blank"><i
+                        class="fab fa-youtube"></i></a>
+                <a href="mailto:abdulwahabafzal393@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><i class="fas fa-location-dot" style="color: var(--primary); margin-right: 10px;"></i> Chakwal. All
+                rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- QR Codes Modal -->
+    <div id="qr-modal" class="modal">
+        <div class="modal-content glass qr-container">
+            <span class="close-qr">&times;</span>
+            <h2>Scan to Follow</h2>
+            <div class="qr-grid">
+                <div class="qr-item">
+                    <img src="../QR CODES/wa_qr.jpg" alt="WhatsApp QR">
+                    <p><i class="fab fa-whatsapp"></i> WhatsApp</p>
+                </div>
+                <div class="qr-item">
+                    <img src="../QR CODES/insta_qr.jpg" alt="Instagram QR">
+                    <p><i class="fab fa-instagram"></i> Instagram</p>
+                </div>
+                <div class="qr-item">
+                    <img src="../QR CODES/tiktok_qr.jpg" alt="TikTok QR">
+                    <p><i class="fab fa-tiktok"></i> TikTok</p>
+                </div>
+                <div class="qr-item">
+                    <img src="../QR CODES/youtube_qr.jpg" alt="YouTube QR">
+                    <p><i class="fab fa-youtube"></i> YouTube</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Live Chat Widget -->
+    <div class="chat-widget" id="chat-widget">
+        <button class="chat-toggle-btn" id="chat-toggle">
+            <span class="chat-icon"><i class="fas fa-comment"></i></span>
+            <span class="close-icon">&times;</span>
+        </button>
+
+        <div class="chat-window glass" id="chat-window">
+            <div class="chat-header">
+                <div class="designer-status">
+                    <img src="../logo.jpg" alt="Abdul Wahab Afzal" class="status-img">
+                    <div class="status-info">
+                        <h4>Abdul Wahab Afzal</h4>
+                        <p><span class="online-indicator"></span> Online</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-messages" id="chat-messages">
+                <div class="message system">Welcome to Wahab Graphics! How can I help you today?</div>
+            </div>
+
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Type your message...">
+                <button id="send-chat-btn" class="btn btn-primary">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../projectsData.js"></script>
+    <script src="../script.js"></script>
+</body>
+
+</html>
