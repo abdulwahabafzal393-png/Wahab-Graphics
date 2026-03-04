@@ -61,7 +61,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Dynamic Gallery Logic
     const galleryContainer = document.querySelector('.modal-gallery') || document.querySelector('.portfolio-grid');
     const isSubPage = window.location.pathname.includes('printing-work/') ||
-        window.location.pathname.includes('printing-work.html') ||
         window.location.pathname.includes('social-media.html') ||
         window.location.pathname.includes('view-work.html') ||
         window.location.pathname.includes('logos.html');
