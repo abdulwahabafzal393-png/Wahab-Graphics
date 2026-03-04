@@ -757,6 +757,23 @@ img {
 }
 
 @media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .main-header {
+        position: relative;
+        margin-bottom: -100px;
+        background: rgba(10, 10, 10, 0.9);
+    }
+    .logo {
+        font-size: 1.2rem;
+    }
+    .header-cta .btn {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+
     .nav-links {
         display: none;
     }
