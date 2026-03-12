@@ -1,0 +1,414 @@
+/* --- NEW PREMIUM DESIGN STYLES --- */
+
+/* Updated Header */
+.glass-new {
+    background: rgba(10, 10, 10, 0.6);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 15px 5%;
+}
+
+.nav-container-new {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo-new {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.w-icon {
+    font-size: 2.2rem;
+    font-family: 'Outfit', serif;
+    font-weight: 800;
+    background: linear-gradient(135deg, #d4af37 0%, #aa8c2c 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+}
+
+.logo-text-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.1;
+}
+
+.title-top {
+    font-weight: 800;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    color: #e0e0e0;
+}
+
+.title-bottom {
+    font-weight: 400;
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    color: #888;
+}
+
+.nav-links-new {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.nav-links-new a {
+    color: #aaaaaa;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.nav-links-new a:hover,
+.nav-links-new a.active-link {
+    color: #d4af37;
+}
+
+.header-cta-new .btn-outline-gold {
+    padding: 10px 24px;
+    border: 1px solid #d4af37;
+    border-radius: 30px;
+    color: #d4af37;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.header-cta-new .btn-outline-gold:hover {
+    background: rgba(212, 175, 55, 0.1);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+}
+
+/* Hero Section New */
+.hero-new-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 140px;
+    padding-bottom: 80px;
+    background: #050505;
+    overflow: hidden;
+}
+
+/* Starry/Wavy Gold Background */
+.bg-waves {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 30%, rgba(212, 175, 55, 0.08) 0%, transparent 60%);
+    z-index: 0;
+}
+
+.bg-waves::before,
+.bg-waves::after {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    background-image: radial-gradient(ellipse at center, rgba(212, 175, 55, 0.15) 0%, transparent 50%);
+    opacity: 0.5;
+    transform: rotate(-15deg);
+    top: -20%;
+    left: -50%;
+    filter: blur(60px);
+}
+
+.bg-waves::after {
+    transform: rotate(15deg);
+    top: 40%;
+    left: 0%;
+    background-image: radial-gradient(ellipse at center, rgba(212, 175, 55, 0.1) 0%, transparent 60%);
+}
+
+.hero-content-new {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    max-width: 900px;
+    margin-bottom: 70px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.gold-title-3d {
+    font-size: clamp(3rem, 6vw, 5rem);
+    line-height: 1.1;
+    font-family: 'Outfit', serif;
+    font-weight: 800;
+    margin-bottom: 25px;
+    background: linear-gradient(to bottom, #fceabba8 0%, #f8b500 50%, #b38300 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.8));
+    text-shadow: 0px 4px 0px rgba(100, 70, 0, 0.4), 0px 8px 20px rgba(212, 175, 55, 0.3);
+}
+
+.hero-subtitle-new {
+    font-size: 1.15rem;
+    color: #cccccc;
+    font-weight: 300;
+    margin-bottom: 40px;
+    letter-spacing: 0.5px;
+}
+
+.btn-outline-gold-rounded {
+    padding: 12px 36px;
+    border: 1px solid rgba(212, 175, 55, 0.6);
+    border-radius: 50px;
+    color: #e0e0e0;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-outline-gold-rounded:hover {
+    border-color: #d4af37;
+    background: rgba(212, 175, 55, 0.15);
+    color: #fff;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+}
+
+/* --- DASHBOARD STYLES --- */
+.dashboard-cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    width: 95%;
+    max-width: 1350px;
+    margin: 40px auto 100px auto;
+    flex-wrap: wrap;
+    z-index: 10;
+    position: relative;
+    animation: fadeInUp 1.2s ease-out;
+}
+
+.dash-card {
+    background: linear-gradient(180deg, #1c1d21 0%, #0d0e11 100%);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 18px;
+    padding: 20px;
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.dash-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.9), 0 0 20px rgba(212, 175, 55, 0.1);
+    border-color: rgba(212, 175, 55, 0.25);
+}
+
+.dash-card-inner-img {
+    background: linear-gradient(180deg, #24252a 0%, #16171a 100%);
+    border: 1px solid rgba(255, 255, 255, 0.02);
+    border-radius: 12px;
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    box-shadow: inset 0 4px 15px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    position: relative;
+}
+
+.dash-card-inner-img img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+    filter: drop-shadow(0 15px 15px rgba(0, 0, 0, 0.7));
+    transition: transform 0.5s ease;
+    z-index: 1;
+}
+
+.dash-card-inner-img i {
+    z-index: 1;
+    transition: transform 0.5s ease;
+}
+
+.dash-card:hover .dash-card-inner-img img,
+.dash-card:hover .dash-card-inner-img i {
+    transform: scale(1.08);
+}
+
+.dash-card-title {
+    color: #e5c370;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.dash-card-desc {
+    color: #888888;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    padding: 0 5px;
+    margin-bottom: 5px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Dashboard Footer */
+.dash-footer {
+    width: 100%;
+    border-top: none;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    z-index: 10;
+    position: relative;
+    margin-top: auto;
+}
+
+.dash-footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1350px;
+    gap: 20px;
+}
+
+.dash-footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.w-icon.small {
+    font-size: 1.6rem;
+}
+
+.title-top.small {
+    font-size: 0.9rem;
+    color: #e0e0e0;
+}
+
+.title-bottom.small {
+    font-size: 0.6rem;
+}
+
+.dash-footer-nav-container {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.dash-footer-links {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.dash-footer-links a {
+    color: #bbbbbb;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.dash-footer-links a:hover {
+    color: #d4af37;
+}
+
+.dash-footer-social {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.dash-footer-social a {
+    color: #d4af37;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.dash-footer-social a:hover {
+    transform: scale(1.2);
+    color: #fff;
+}
+
+.dash-footer-copyright {
+    color: #777;
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
+@media (max-width: 1100px) {
+    .dash-footer-inner {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .dash-footer-nav-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .dash-footer-social {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .nav-links-new,
+    .header-cta-new {
+        display: none;
+    }
+
+    .hero-new-section {
+        padding-top: 120px;
+    }
+
+    .gold-title-3d {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle-new {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+}

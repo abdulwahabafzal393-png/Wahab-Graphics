@@ -35,76 +35,115 @@
     <meta name="twitter:image" content="https://wahab-graphics.vercel.app/cover-photo.png">
 
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="premium-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
     <!-- Header -->
-    <header class="main-header glass">
-        <nav class="nav-container">
-            <div class="logo">
-                <img src="logo.jpg" alt="Wahab Graphics Logo">
-                <span class="gold-text">WAHAB</span> GRAPHICS
+    <header class="glass-new">
+        <nav class="nav-container-new">
+            <div class="logo-new">
+                <div class="w-icon">W</div>
+                <div class="logo-text-col">
+                    <span class="title-top">WAHAB</span>
+                    <span class="title-bottom">GRAPHICS</span>
+                </div>
             </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
+            <ul class="nav-links-new">
+                <li><a href="#home" class="active-link">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#projects">Portfolio</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="header-cta">
-                <a href="https://wa.me/923115621959" class="btn btn-primary">Order Now</a>
+            <div class="header-cta-new">
+                <a href="#quote" class="btn btn-outline-gold">Request a Quote</a>
             </div>
         </nav>
     </header>
 
     <main>
         <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="hero-image-container">
-                <img src="cover-photo.png" alt="Wahab Graphics Cover" class="hero-cover-img glass">
+        <section id="home" class="hero-new-section">
+            <div class="bg-waves"></div>
+            <div class="hero-content-new">
+                <h1 class="gold-title-3d">Your Vision,<br>Our Masterpiece.</h1>
+                <p class="hero-subtitle-new">High-End Visual Identity & Digital Solutions for Exceptional Brands.</p>
+                <div class="hero-btns-new">
+                    <a href="#services" class="btn btn-outline-gold-rounded">Explore Services</a>
+                </div>
             </div>
-            <div class="hero-content">
-                <h1>Your Vision, <span class="gold-text">Our Masterpiece</span></h1>
-                <p><i class="fas fa-location-dot" style="color: var(--primary); margin-right: 10px;"></i> Chakwal. We
-                    bring your vision to life.</p>
-                <div class="hero-btns">
-                    <a href="#projects" class="btn btn-primary">View Portfolio</a>
-                    <a href="#contact" class="btn btn-outline">Let's Talk</a>
+
+            <div class="dashboard-cards-container">
+                <a href="designing-services.html" class="dash-card">
+                    <div class="dash-card-inner-img">
+                        <img src="icons/logo_design.png" alt="Brand Identity Design">
+                    </div>
+                    <h3 class="dash-card-title">Brand Identity Design</h3>
+                    <p class="dash-card-desc">Details precise bevels for innate 32D and monograms and typography.</p>
+                </a>
+                <a href="social-media-services.html" class="dash-card">
+                    <div class="dash-card-inner-img">
+                        <img src="icons/social_media.png" alt="Social Media Design">
+                    </div>
+                    <h3 class="dash-card-title">Social Media Design</h3>
+                    <p class="dash-card-desc">A socialMedia design solid composition of likess and content icons....</p>
+                </a>
+                <a href="printing-work.html" class="dash-card">
+                    <div class="dash-card-inner-img">
+                        <img src="icons/printing_work.png" alt="Print Design">
+                    </div>
+                    <h3 class="dash-card-title">Print Design</h3>
+                    <p class="dash-card-desc">Vintage printing press, stactes, scages, business cards, and reiwews.</p>
+                </a>
+                <a href="#" class="dash-card">
+                    <div class="dash-card-inner-img">
+                        <i class="fas fa-box-open"
+                            style="font-size: 5rem; color: #d4af37; filter: drop-shadow(0 5px 5px rgba(0,0,0,0.5));"></i>
+                    </div>
+                    <h3 class="dash-card-title">Packaging Design</h3>
+                    <p class="dash-card-desc">A product design, structure of a product bosox, and texture elements.</p>
+                </a>
+            </div>
+
+            <!-- Dashboard Footer -->
+            <div class="dash-footer">
+                <div class="dash-footer-inner">
+                    <div class="dash-footer-logo">
+                        <div class="w-icon small">W</div>
+                        <div class="logo-text-col">
+                            <span class="title-top small">WAHAB</span>
+                            <span class="title-bottom small">GRAPHICS</span>
+                        </div>
+                    </div>
+
+                    <div class="dash-footer-nav-container">
+                        <div class="dash-footer-links">
+                            <a href="#home">Home</a>
+                            <a href="#services">Services</a>
+                            <a href="#projects">Portfolio</a>
+                            <a href="#about">About</a>
+                            <a href="#contact">Contact</a>
+                        </div>
+                        <div class="dash-footer-social">
+                            <a href="#" style="font-size: 1.1rem;">3D</a>
+                            <a href="https://www.instagram.com/wahabafzalgraphics?igsh=d20zcmhmYTVsbmFw"
+                                target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://youtube.com/@wahabafzal08?si=ohB-vm4yHDxkQMmN" target="_blank"><i
+                                    class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="dash-footer-copyright">
+                        &copy; Copyright Wahab Graphics
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="services" class="services">
-            <div class="section-header">
-                <h2>Our Services</h2>
-                <p>Everything you need for a stunning presence</p>
-            </div>
-            <div class="services-grid">
-                <a href="printing-work.html" class="service-card glass clickable-card">
-                    <div class="service-icon"><i class="fas fa-print"></i></div>
-                    <h3>Premium Printing</h3>
-                    <p>High-quality digital and offset printing for cards, banners, and books. Click to view all
-                        categories.</p>
-                </a>
-                <a href="social-media-services.html" class="service-card glass clickable-card">
-                    <div class="service-icon"><i class="fas fa-palette"></i></div>
-                    <h3>Social Media Design</h3>
-                    <p>Engaging posts and banners tailored for your digital growth. Explore all sectors.</p>
-                </a>
-                <a href="wallpaper-services.html" class="service-card glass clickable-card">
-                    <div class="service-icon"><i class="fas fa-images"></i></div>
-                    <h3>3D Wallpaper</h3>
-                    <p>Custom 3D wall designs for home and office. Shine and Matte Flex options available.</p>
-                </a>
-                <a href="designing-services.html" class="service-card glass clickable-card">
-                    <div class="service-icon"><i class="fas fa-pen-nib"></i></div>
-                    <h3>Creative Designing</h3>
-                    <p>Professional posters, logos, and branding designs. Click to view all categories.</p>
-                </a>
-            </div>
-        </section>
+        <!-- Bottom Footer Bar (Floating above footer or at the bottom of hero if intended) -->
+        <!-- In the image, the footer is visible directly below the cards, meaning this is a cohesive single view / landing view -->
 
         <!-- Projects / Portfolio -->
         <section id="projects" class="projects">
